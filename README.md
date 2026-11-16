@@ -54,7 +54,8 @@ streaming and refreshed every two seconds otherwise, and removed on shutdown:
 
 The file is written to a temporary name and renamed, so a reader never sees a
 half-written heartbeat. A reader is expected to ignore stale `updatedAt` and
-dead `pid`s.
+dead `pid`s. `phase` is one of `idle`, `prefill`, `streaming`, `waiting`, `tool`
+or `prompt`, and `phaseMs` says how long it has held.
 
 ## The bus
 
