@@ -1,0 +1,23 @@
+{
+  "name": "pi-pulse",
+  "version": "1.0.0",
+  "description": "Streaming telemetry for pi sessions: a calibrated tok/s estimate, the session phase and context usage on the extension bus and in a heartbeat file.",
+  "keywords": ["pi", "pi-package", "extension", "telemetry"],
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/db112358/pi-pulse.git"
+  },
+  "homepage": "https://github.com/db112358/pi-pulse#readme",
+  "bugs": {
+    "url": "https://github.com/db112358/pi-pulse/issues"
+  },
+  "files": ["extensions", "README.md", "LICENSE"],
+  "pi": {
+    "extensions": ["./extensions/pulse.ts"]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  }
+}
